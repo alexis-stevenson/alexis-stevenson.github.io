@@ -10,4 +10,4 @@ redirect_from:
 
 Hello,
 
-Blablabla...
+I am a PhD candidate in Economics.
