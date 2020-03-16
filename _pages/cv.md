@@ -11,9 +11,6 @@ redirect_from:
 
 Find a complete CV here.
 
-Alexis Stevenson (alexis.stevenson(at)hanken.fi)
-------
-
 Education
 ---------
 
