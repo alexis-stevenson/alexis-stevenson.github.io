@@ -10,7 +10,7 @@ Hanken School of Economics
 -------- 
 Teaching assistant for the course **Economics of Strategy (2018, 2020)**  
 
-# KU Leuven  
+KU Leuven  
 -----------
 **Master's thesis coaching (2020)**   
 
