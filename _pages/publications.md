@@ -1,10 +1,14 @@
 ---
 layout: archive
-title: "Publications"
+title: "Research"
 permalink: /publications/
 author_profile: true
 ---
 
-Test 
-# Test 1
-## Test 2
+Work-in progress
+--------
+
+* Article 1
+* Article 2
+* Article 3
+
