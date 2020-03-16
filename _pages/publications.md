@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-Work-in progress
+Work in progress
 --------
 
 * Article 1
