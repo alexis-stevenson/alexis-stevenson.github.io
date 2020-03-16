@@ -6,14 +6,12 @@ author_profile: true
 ---
 
 
-Hanken School of Economics (teaching assistant)   
+Hanken School of Economics  
 -------- 
-
-**Economics of Strategy (2018, 2020)**  
+Teaching assistant for the course **Economics of Strategy (2018, 2020)**  
 
 # KU Leuven  
 -----------
-
 **Master's thesis coaching (2020)**   
 
 
