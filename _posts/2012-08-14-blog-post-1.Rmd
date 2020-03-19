@@ -7,17 +7,65 @@ tags:
   - category1
   - category2
 ---
+# Introduction
 
-This is a sample blog post. Lorem ipsum I can't remember the rest of lorem ipsum and don't have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.
+I provide here a relication in R of two important papers in the demand estimation literature. I use **BLPestimatoR**, a package created by Daniel Brunner to retrieve the original datasets from Berry Levinshon and Pakes (1995) and Nevo (2001)
+```{r include = T, warning=FALSE, message = F}
+rm(list = ls())
+library(BLPestimatoR)
+df1 <- productData_cereal
+df2 <- productData_cars
+summary(df1)
+```
 
-Headings are cool
-======
+# General Model  
 
-You can have many headings
-======
+$T$ market indexed by $t = 1, \ldots , T$ \
+$L_t$ consumers in each market \
+$J+1$ products indexed by $j = 0, \ldots J$ \
+$j=0$ is the outside option.
 
-Aren't headings cool?
+The conditional indirect utility is defined as:
+$$
+  u_{ijt} =\left\{
+      \begin{aligned}
+        &x_{jt} \beta_i + \alpha p_{jt} + \xi_{jt} + \epsilon_{ijt} & \quad \text{if} \quad & j \in \{1,\ldots,J\}\\
+        &\epsilon_{i0t} & \quad \text{if} \quad & j = 0 \\
+      \end{aligned}
+    \right.
+$$
+ $x_{jt}$ is a $(1 \times K)$ vector of observed product characteristics \
+$p_{jt}$ is the price ; $\alpha$ is the price valuation \
+$\xi_{jt}$ is the unobserved product characteristic \
+$\epsilon_{ijt}$ is the error term, usually iid RV with a type I EV distribution \
+$\beta_i$ is a $(K\times 1)$ parameter vector of random coefficients \
 
-$$ int{0}^{x} x^2 dx$$
+The random coefficient for characteristic $k$ is given by:
+$$
+\beta_{i}^{k} = \beta^{k} + \theta^{k} v_{i}^{k}
+$$
 
-------
+$\beta^{k}$ is a mean valuation for characteristic $k$ \
+$v_{i}^{k}$ is a random variable \
+$\theta^k$ is the standard deviation across consumers (if $\theta^k$ = 0 $\rightarrow$ Logit) \
+
+Conditional indirect utility becomes:
+$$
+u_{ijt} = \underbrace{x_{jt} \beta - \alpha p_{jt} + \xi_{jt}}_{\delta_{jt}} \:+ \: \underbrace{\sum_{k} x_{jt}^{k} \, \theta^{k} \, v_{i}^{k}}_{\mu_{jt}(v_i)} \: + \: \epsilon_{ijt}
+$$
+
+# Estimation steps   
+
+1. Prepare the data: draws from the distribution of $v$, run a TSLS estimation (Logit) to get initial values. <span style="color:red">RCOptimalInstruments.m</span> \
+2. For a given value of $\theta$ and $\beta$, compute the market shares implied by the market share equation (simulation). <span style="color:red">ShareCalculation.m</span> \
+3. For a given value of $\theta$, calculate the $\delta$ that equates the market shares computed in Step 2 to the observed market shares (contraction mapping/inner loop). <span style="color:red">delta.m</span> \
+4. For a given $\theta$, compute the error terms $\xi_{jt}$ and then the value of the objective function. <span style="color:red">gmm.m</span> \
+5. Compute the gradient matrix. <span style="color:red">jacob.m</span> \
+6. Search for the value of $\theta$ that minimizes the objective function (outer loop) with steps 2-5 nested for every $\theta$ trial.<span style="color:red">RCOptimalInstruments.m</span> \
+7. Compute standard errors for all parameters. <span style="color:red">seblp.m</span>
+```{r include = T, warning=FALSE, message = F}
+rm(list = ls())
+
+
+```
+
