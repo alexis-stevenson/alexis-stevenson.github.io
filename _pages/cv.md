@@ -29,9 +29,13 @@ Experience
 **Economist - French Embassy in Finland**
 
 
-* First item
+* Reported on the economic and financial situation in Finland to the French authorities, including provided input to the preparations of the French representations to the OECD and the IMF for their meetings on the OECD Report and the IMF article IV consultations respectively.
 
-* Second item
+* Liaised with the French Treasury regarding the Finnish positions for the Economic and Financial Affairs Council (ECOFIN) meetings: met with Finnish officials, wrote briefing notes for ECOFIN meetings and reported at each milestone of the European Semester.
+
+* Liaised with the French community in Finland: updated the website of the Economic Unit in Finland, wrote articles for the bi-weekly joint input of the French Embassies in the Nordic countries.
+
+* Deputized for the Head of the Economic Unit, the Economic Counsellor, in her absence: reported weekly on the Economic Unit’s activities to the Ambassador, attended economic events (e.g. Slush) and seminars, represented the Economic Unit of the French Embassy at meetings.
 
 **Some internships**
 
@@ -39,7 +43,7 @@ Experience
 
 * EDF 
 
-* Research assistant
+* Research assistant at QUT
 
 Other
 ----------------------------------------
