@@ -3,7 +3,7 @@ title: "Random Coefficient Logit estimation"
 output: html_document
 date: 2020-08-14
 keep_tex: yes
-permalink: /posts/2020/04/blog-post-1/
+permalink: /posts/2020/04/blog-post-5/
 tags:
   - cool posts
   - category1
