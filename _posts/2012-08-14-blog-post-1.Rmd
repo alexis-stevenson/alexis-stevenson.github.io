@@ -54,19 +54,3 @@ Conditional indirect utility becomes:
 $$
 u_{ijt} = \underbrace{x_{jt} \beta - \alpha p_{jt} + \xi_{jt}}_{\delta_{jt}} \:+ \: \underbrace{\sum_{k} x_{jt}^{k} \, \theta^{k} \, v_{i}^{k}}_{\mu_{jt}(v_i)} \: + \: \epsilon_{ijt}
 $$
-
-# Estimation steps   
-
-1. Prepare the data: draws from the distribution of $v$, run a TSLS estimation (Logit) to get initial values. <span style="color:red">RCOptimalInstruments.m</span> \
-2. For a given value of $\theta$ and $\beta$, compute the market shares implied by the market share equation (simulation). <span style="color:red">ShareCalculation.m</span> \
-3. For a given value of $\theta$, calculate the $\delta$ that equates the market shares computed in Step 2 to the observed market shares (contraction mapping/inner loop). <span style="color:red">delta.m</span> \
-4. For a given $\theta$, compute the error terms $\xi_{jt}$ and then the value of the objective function. <span style="color:red">gmm.m</span> \
-5. Compute the gradient matrix. <span style="color:red">jacob.m</span> \
-6. Search for the value of $\theta$ that minimizes the objective function (outer loop) with steps 2-5 nested for every $\theta$ trial.<span style="color:red">RCOptimalInstruments.m</span> \
-7. Compute standard errors for all parameters. <span style="color:red">seblp.m</span>
-```{r include = T, warning=FALSE, message = F}
-rm(list = ls())
-
-
-```
-
