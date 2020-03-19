@@ -9,7 +9,7 @@ tags:
 ---
 # Introduction
 
-I provide here a relication in R of two important papers in the demand estimation literature. I use **BLPestimatoR**, a package created by Daniel Brunner to retrieve the original datasets from Berry Levinshon and Pakes (1995) and Nevo (2001)
+I provide here a replication in R of two important papers in the demand estimation literature. I use **BLPestimatoR**, a package created by Daniel Brunner to retrieve the original datasets from Berry Levinshon and Pakes (1995) and Nevo (2001)
 ```{r include = T, warning=FALSE, message = F}
 rm(list = ls())
 library(BLPestimatoR)
