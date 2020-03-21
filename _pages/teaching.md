@@ -1,10 +1,9 @@
 ---
 layout: archive
-title: "teaching"
+title: ""
 permalink: /teaching/
 author_profile: true
 ---
-
 
 Hanken School of Economics  
 -------- 
@@ -18,7 +17,7 @@ KU Leuven
 
 <!---{% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<!---{% for post in site.teaching reversed %}
+<!---  {% include archive-single.html %}
+<!--- {% endfor %}
 -->
