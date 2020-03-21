@@ -16,4 +16,4 @@ This repository contains R Markdown notebooks implementing the code samples foun
 
 | Description | Notebook | Source Code
 | ------------- | ------------- | ------------- |
-| 2.1: A first look at a neural network | [Notebook (HTML)](https://https://alexis-stevenson.github.io/_posts/demand_version2020.nb.html) | [R Markdown (Rmd)](https://https://alexis-stevenson.github.io/_posts/demand_version2020.Rmd)  |
+| 2.1: A first look at a neural network | [Notebook (HTML)](https://https://alexis-stevenson.github.io/files/demand_version2020.nb.html) | [R Markdown (Rmd)](https://https://alexis-stevenson.github.io/files/demand_version2020.Rmd)  |
