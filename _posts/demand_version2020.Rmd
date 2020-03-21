@@ -1,13 +1,13 @@
 ---
 title: "Random Coefficient Logit estimation"
-output: html_document
 date: 2020-08-14
-keep_tex: yes
-permalink: /posts/2020/04/blog-post-1/
-tags:
-  - cool posts
-  - category1
-  - category2
+output:
+  html_notebook: 
+    code_folding: hide
+    fig_caption: yes
+    highlight: tango
+    theme: united
+    toc: yes
 header-includes: 
   - \usepackage{amsmath}
   - \usepackage{mathrsfs}
